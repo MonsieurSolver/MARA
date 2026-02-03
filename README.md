@@ -94,5 +94,4 @@ message = scatter_sum(
 ## Training and Hardware
 
 - Training was primarily performed on **NVIDIA H100 GPUs**
-- The same hyperparameters as the original [MACE paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/4a36c3c51af11ed9f34615b81edb5bbc-Paper-Conference.pdf) were used 
 - Inference benchmarks were conducted on an **RTX 4090**
