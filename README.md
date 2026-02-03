@@ -2,6 +2,25 @@
 
 This repository contains the implementation of **MARA**, a spherical attention module integrated into the MACE framework for equivariant message passing on atomic systems.
 
+## How to use it
+
+```
+from MARA import SEAttention
+
+# Init
+self.spherical_attention = SEAttention(input_size=128,
+                                       hidden_size=32,
+                                       H=4,
+                                       W=8)
+
+# Forward
+m_ji, gate = self.spherical_attention(
+    features,    # [N, F]
+    positions,   # [N, 3]
+    edge_index   # [2, E]
+)
+```
+
 ## Overview
 
 MARA introduces a spherical attention mechanism operating on a discretized spherical grid and is designed to enhance message passing in equivariant neural networks.
